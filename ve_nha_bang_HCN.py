@@ -1,7 +1,7 @@
 from turtle import *
 from random import *
-from rectangle_forward import *
-from sky_cloud import *
+from my_module.rectangle_forward import *
+from my_module.sky_cloud import *
 hideturtle()
 bgcolor('#025F81')
 hideturtle()
