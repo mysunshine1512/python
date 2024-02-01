@@ -80,7 +80,7 @@ fd(30)
 rectangle_af(5, 5, '#E7F9FD')
 lt(90)
 # 3
-goto(180, -400)
+goto(190, -400)
 rectangle_af(120, 140, '#435B73')
 fd(20)
 rectangle_af(80, 150, '#435B73') 
@@ -157,7 +157,7 @@ fd(10)
 lt(90)
 fd(18)
 rt(90)
-rectangle_af((15 * 2 + 5 * 2 + 14 * 11) - 10 * 4, 18 * 1, '#AE9C90')
+rectangle_af((15 * 2 + 5 * 2 + 14 * 11) - 10 * 4, 18 * 1, '#90665A')
 rectangle_af((15 * 2 + 14 * 3) - 10 * 4 , 18 * 1, '#666273')
 bk(20)
 rt(90)
@@ -220,7 +220,7 @@ bk(10)
 lt(90)
 fd(18)
 rt(90)
-rectangle_af( - ((15 * 2 + 5 * 1 + 14 * 10) - 10 * 4), 18 * 1, '#AE9C90')
+rectangle_af( - ((15 * 2 + 5 * 1 + 14 * 10) - 10 * 4), 18 * 1, '#90665A')
 rectangle_af( - ((15 * 2 + 14 * 4) - 10 * 4) , 18 * 1, '#666273')
 fd(20)
 rt(90)
@@ -246,13 +246,11 @@ fd(15)
 rectangle_af(159, 110, '#42352D')
 # 3
 fd(16)
-rectangle_af(127, 391, '#42352D')
-rectangle_af(111, 403, '#42352D')
+rectangle_af(127, 403, '#42352D')
 # 4
 fd(16)
-rectangle_af(95, 535, '#42352D')
+rectangle_af(95, 560, '#42352D')
 fd(16)
-rectangle_af(79, 560, '#42352D')
 # 5
 lt(90)
 fd(560)
@@ -334,20 +332,28 @@ for i in range(5) :
 fd(1)
 # ngấn
 goto(-16, -260)
-rectangle_af(32, 2, '#764525')
+pensize(3)
+pencolor('#764525')
+fillcolor('#F0F4F5')
+pendown()
+begin_fill()
+for i in range(3) :
+    fd(31)
+    lt(120)
+end_fill()
+pensize(1)
+penup()
+
 # ô nhà
 goto(-63, 46)
 for i in range(2) :
     rectangle_2_fd(8, 12, 50, 50, 2, '#42352D', '#FFE6BA')
     fd(9)
-for i in range(2) :
-    rectangle_2_fd(8, 12, 50, 50, 13, '#42352D', '#FFE6BA')
-    fd(9)
-for i in range(8) :
+for i in range(10) :
     rectangle_2_fd(8, 12, 50, 50, 15, '#42352D', '#FFE6BA')
     fd(9)
 for i in range(2) :
-    rectangle_2_fd(8, 12, 50, 50, 1, '#42352D', '#FFE6BA')
+    rectangle_2_fd(8, 12, 50, 50, 2, '#42352D', '#FFE6BA')
     fd(9)
 
 done()
